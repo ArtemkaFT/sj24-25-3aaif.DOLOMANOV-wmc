@@ -1,79 +1,69 @@
-body {
-    background-color: #495349;
-    font-family: cursive;
+* {
+    /* Universal Selector*/
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+
 .header {
-    background-color: #171414;
+    /*Class Selector */
+    background-color: #cf9039;
     color: white;
     text-align: center;
     padding: 20px;
-    border-radius: 0 0 20px 20px;
-    font-size: 24px;
 }
 
-.container {
-    background-color: #A9A9A9;
-    width: 80%;
-    margin: 30px auto;
+
+#main-content {
+    /* ID Selector */
     padding: 20px;
-    border-radius: 15px;
-    display: flex;
-}
-
-.info {
-    flex: 1;
-    text-align: left;
-    padding-right: 20px;
-}
-
-.photo-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-photo {
-    max-width: 150px;
-    border-radius: 75px;
-}
-
-.hobbies-education-container {
-    background-color: #A9A9A9;
-    width: 80%;
+    background-color: #f4f4f4;
     margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 15px;
-
+    max-width: 1200px;
 }
 
-.hobbies,
-.education {
-    flex: 1;
-    margin: 0 10px;
 
+.header+.sub-header {
+    /* Adjacent Sibling Selector */
+    background-color: #8a3f60;
+    color: #a4bb3c;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
 }
 
-.languages-container {
-    background-color: #A9A9A9;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: left;
 
+ul li:nth-child(odd) {
+    /* Nth-child Selector */
+    background-color: #db3838;
 }
 
-.future-container {
-    background-color: #A9A9A9;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: left;
+ul li:nth-child(even) {
+    background-color: #e1e741;
+}
+
+
+ul {
+    list-style-type: none;
+    color: #ea9516;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    padding: 10px;
+    border: 1px solid #3e0e0e;
+}
+
+button {
+    margin-left: 47%;
+    color: #db3838;
+}
+
+button:hover {
+    padding: auto;
+    background-color: #43cbe9;
+    color: rgb(105, 131, 68);
 }
